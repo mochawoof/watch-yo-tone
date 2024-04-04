@@ -38,7 +38,7 @@ public class Main {
         }.start();
     }
     public static void main(String[] args) {
-        frame = new JFrame("Tone Generator");
+        frame = new JFrame("watch yo tone");
         frame.setSize(300, 400);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
