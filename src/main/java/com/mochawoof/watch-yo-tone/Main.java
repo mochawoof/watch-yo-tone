@@ -59,7 +59,8 @@ public class Main {
         valueLabel.setFont(new Font("Monospaced", Font.PLAIN, 20));
         updateValueLabel();
         panel.add(valueLabel, BorderLayout.PAGE_START);
-        JButton toggleButton = new JButton("Play");
+        //made final to get compiler off my ass
+        final JButton toggleButton = new JButton("Play");
         panel.add(toggleButton, BorderLayout.PAGE_END);
         
         toggleButton.addActionListener(new ActionListener() {
