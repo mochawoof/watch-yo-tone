@@ -2,6 +2,7 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.*;
+//watch-yo-tone v1.1.0
 public class Main {
     private static JFrame frame;
     private static JPanel panel;
@@ -10,10 +11,11 @@ public class Main {
     private static boolean started = false;
     private static void resize() {
         Dimension frameSize = frame.getContentPane().getSize();
-                
         Dimension panelSize = panel.getSize();
         panel.setSize(panelSize.width, frameSize.height);
         panel.setLocation(((int)frameSize.width / 2 - (panelSize.width / 2)), 0);
+	frame.revalidate();
+	frame.repaint();
     }
     private static void updateValueLabel() {
         valueLabel.setText(dial.getValue() + "hz");
